@@ -470,8 +470,9 @@ function clamp01(x) {
     return Math.min(1, Math.max(0, x));
 }
 
-// MediaPipe Tasks Vision (main-thread) setup
 
+
+// MediaPipe Tasks Vision (main-thread) setup
 const BASE = import.meta.env.BASE_URL; // "/interactive-gesture-vfx/" on GitHub Pages
 const WASM_BASE = `${BASE}mediapipe/tasks/wasm/`;
 const MODEL_PATH = `${BASE}mediapipe/tasks/models/hand_landmarker.task`;
