@@ -1,0 +1,10 @@
+body { margin: 0; background: #000; overflow: hidden; font-family: sans-serif; }
+#stage { width: 100vw; height: 100vh; display: block; }
+#overlay {
+    position: fixed; inset: 0; display: flex; justify-content: center;
+    align-items: center; background: rgba(0,0,0,0.9); z-index: 10;
+}
+#start-btn {
+    padding: 20px 50px; background: none; border: 2px solid #00f3ff;
+    color: #00f3ff; cursor: pointer; letter-spacing: 3px;
+}

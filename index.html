@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaction Stage</title>
+    <style>
+        body { margin: 0; background: #000; overflow: hidden; font-family: sans-serif; }
+        #stage { width: 100vw; height: 100vh; display: block; }
+        #overlay { position: fixed; inset: 0; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0.9); z-index: 10; backdrop-filter: blur(10px); }
+        #start-btn { padding: 20px 50px; background: none; border: 2px solid #00f3ff; color: #00f3ff; cursor: pointer; letter-spacing: 3px; font-weight: bold; transition: 0.3s; }
+        #start-btn:hover { background: #00f3ff; color: #000; box-shadow: 0 0 20px #00f3ff; }
+    </style>
+</head>
+<body>
+    <div id="overlay"><button id="start-btn">SYSTEM START</button></div>
+    <canvas id="stage"></canvas>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
