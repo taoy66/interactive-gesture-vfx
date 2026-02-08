@@ -471,8 +471,10 @@ function clamp01(x) {
 }
 
 // MediaPipe Tasks Vision (main-thread) setup
-const WASM_BASE = '/mediapipe/tasks/wasm/';
-const MODEL_PATH = '/mediapipe/tasks/models/hand_landmarker.task';
+
+const BASE = import.meta.env.BASE_URL; // "/interactive-gesture-vfx/" on GitHub Pages
+const WASM_BASE = `${BASE}mediapipe/tasks/wasm/`;
+const MODEL_PATH = `${BASE}mediapipe/tasks/models/hand_landmarker.task`;
 let landmarker = null;
 let lastTs = 0;
 
